@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddEditNote">
+
+    <LinearLayout
+        android:id="@+id/appBarTitle"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/header_color"
+        android:elevation="12dp"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="35dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tvAppBarTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="Room Notes App"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/btnUpdateEdit"
+            android:layout_width="35dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_check" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etNotesTitle"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/appBarTitle"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:maxLength="25"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/editext"
+        android:focusableInTouchMode="true"
+        android:hint="Notes Title"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textColor="@color/black_shade_1"
+        android:textColorHint="@color/black_shade_1"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/etNotesDesc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/etNotesTitle"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/editext"
+        android:gravity="start|top"
+        android:hint="Notes Desc"
+        android:inputType="textMultiLine"
+        android:padding="10dp"
+        android:singleLine="false"
+        android:textColor="@color/black_shade_1"
+        android:textColorHint="@color/black_shade_1"
+        android:textSize="18sp" />
+
+</RelativeLayout>
