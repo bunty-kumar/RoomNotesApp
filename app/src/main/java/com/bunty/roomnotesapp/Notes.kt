@@ -8,8 +8,7 @@ import androidx.room.PrimaryKey
 class Notes(
     @ColumnInfo(name = "title") val noteTitle: String,
     @ColumnInfo(name = "notesDesc") val noteDesc: String,
-    @ColumnInfo(name = "timeStamp") val noteTimeStamp: String
-) {
+    @ColumnInfo(name = "timeStamp") val noteTimeStamp: String) {
     @PrimaryKey(autoGenerate = true)
     var id = 0
 }

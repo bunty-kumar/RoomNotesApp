@@ -45,7 +45,6 @@ class MainActivity : AppCompatActivity(), NotesClick, NotesDeleteClick {
         floatingBtn.setOnClickListener {
             val intent = Intent(this, AddEditNote::class.java)
             startActivity(intent)
-            // finish()
         }
 
     }
